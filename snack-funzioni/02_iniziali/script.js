@@ -6,8 +6,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 
 
+
+firstLetterName = (firstLetter) => {
+    return firstLetter.map(name=>name[0])
+}
+
+
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(firstLetterName(names))
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
