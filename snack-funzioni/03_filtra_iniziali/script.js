@@ -5,9 +5,24 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-letterStartChoice = (nomeArray, firstLetter) => {
+/*letterStartChoice = (nomeArray, firstLetter) => {
     return nomeArray.filter(letter=>letter.startsWith(firstLetter))
+}*/
+
+letterStartChoice = (nomeArray, firstLetter) => {
+    letChoice=[];
+
+    for(i=0; i<nomeArray.length; i++){
+        if(nomeArray[i].startsWith(firstLetter)){
+            letChoice.push(nomeArray[i])
+        }
+
+        
+    }
+
+    return letChoice
 }
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
