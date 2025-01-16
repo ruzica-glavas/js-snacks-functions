@@ -5,9 +5,13 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
+userNameFunction = (name) => `Ciao ${name}`
+
+
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(userNameFunction (userName))
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
