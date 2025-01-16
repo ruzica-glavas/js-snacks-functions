@@ -7,14 +7,30 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 
-firstLetterName = (firstLetter) => {
+/*firstLetterName = (firstLetter) => {
     return firstLetter.map(name=>name[0])
+}*/
+
+
+
+firstLetterName = (firstLetter) => {
+    let initials=[];
+    for(i=0; i<firstLetter.length; i++){
+        
+        initials.push(firstLetter[i][0])
+    }
+
+    return initials
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(firstLetterName(names))
+let initials =firstLetterName(names);
+console.log(initials);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+
+
