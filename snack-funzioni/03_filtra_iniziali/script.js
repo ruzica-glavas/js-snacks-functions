@@ -5,9 +5,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+letterStartChoice = (nomeArray, firstLetter) => {
+    return nomeArray.filter(letter=>letter.startsWith(firstLetter))
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(letterStartChoice(names, "A"))
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
